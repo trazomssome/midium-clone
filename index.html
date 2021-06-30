@@ -4,22 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To Do Advanture</title>
+    <title>Pomodoro</title>
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/clock.css" />
+    <link rel="stylesheet" href="css/background.css" />
   </head>
   <body>
-    <header>wether</header>
+    <header>
+      <div id="weather">
+        <span class="weather__temp"></span>
+        <span class="weather__wether"></span>
+        <span class="weather__city"></span>
+      </div>
+    </header>
     <main>
       <h1 class="clock">7:56</h1>
       <form class="login-form">
         <input placeholder="Type your name" type="text" class="input" />
       </form>
       <h1 class="greeting hidden"></h1>
-      <h2>What is your main focus for today?</h2>
-      <form>
-        <input placeholder="Type your focus" type="text" class="login" />
+      <form class="todo-form">
+        <input type="text" class="todo-form__input" />
       </form>
+      <ul class="todo-list"></ul>
     </main>
     <footer>
       <h4>
@@ -28,7 +35,11 @@
       </h4>
       <span>Todo</span>
     </footer>
+    <img class="background" />
     <script src="js/clock.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/wether.js"></script>
   </body>
 </html>
