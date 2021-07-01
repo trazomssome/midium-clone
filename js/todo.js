@@ -16,16 +16,22 @@ const deleteTodo = (event) => {
   localStorage.setItem("todos", JSON.stringify(resultToDos));
 };
 
+const addTodo = (event) => {};
+
 function paintTodo(item) {
   const li = document.createElement("li");
   const span = document.createElement("span");
   span.innerText = item.value + " ";
-  const text = document.createElement("span");
-  text.innerText = "❌";
-  text.addEventListener("click", deleteTodo);
+  const textDelete = document.createElement("span");
+  textDelete.innerText = " x";
+  textDelete.addEventListener("click", deleteTodo);
+  const textAdd = document.createElement("span");
+  textAdd.innerText = " +";
+  textAdd.addEventListener("click", addTodo);
   li.id = item.id;
   li.appendChild(span);
-  li.appendChild(text);
+  li.appendChild(textDelete);
+  li.appendChild(textAdd);
   todoList.appendChild(li);
 }
 

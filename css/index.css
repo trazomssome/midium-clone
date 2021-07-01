@@ -5,3 +5,19 @@
 body {
   color: white;
 }
+
+#weather {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  color: red;
+}
+
+#footer__todo {
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  right: 10px;
+  color: red;
+}
