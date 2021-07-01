@@ -1,6 +1,7 @@
 const todoForm = document.querySelector(".todo-form");
 const todoInput = document.querySelector(".todo-form__input");
 const todoList = document.querySelector(".todo-list");
+const startBtn = document.querySelector(".pomodoro__start-btn");
 
 const deleteTodo = (event) => {
   const li = event.target.parentNode;
@@ -16,8 +17,6 @@ const deleteTodo = (event) => {
   localStorage.setItem("todos", JSON.stringify(resultToDos));
 };
 
-const addTodo = (event) => {};
-
 function paintTodo(item) {
   const li = document.createElement("li");
   const span = document.createElement("span");
@@ -25,13 +24,9 @@ function paintTodo(item) {
   const textDelete = document.createElement("span");
   textDelete.innerText = " x";
   textDelete.addEventListener("click", deleteTodo);
-  const textAdd = document.createElement("span");
-  textAdd.innerText = " +";
-  textAdd.addEventListener("click", addTodo);
   li.id = item.id;
   li.appendChild(span);
   li.appendChild(textDelete);
-  li.appendChild(textAdd);
   todoList.appendChild(li);
 }
 
@@ -69,6 +64,11 @@ function init() {
   }
 }
 
+const handleStart = () => {
+  todoList.classList.add(HIDDEN_CLASSNAME);
+};
+
 init();
 
 todoForm.addEventListener("submit", submitTodo);
+startBtn.addEventListener("click", handleStart);

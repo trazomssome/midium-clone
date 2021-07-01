@@ -6,11 +6,18 @@ body {
   color: white;
 }
 
+header {
+  height: 30px;
+}
+
 #weather {
   position: absolute;
+  height: auto;
   top: 0px;
   right: 10px;
   color: red;
+  background-color: black;
+  margin: 15px;
 }
 
 #footer__todo {
