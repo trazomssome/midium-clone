@@ -11,22 +11,37 @@ body {
   height: 100vh;
 }
 
-header {
-  background-color: ;
+header,
+footer {
   height: 50px;
-  background-color: red;
 }
 
 main {
-  background-color: ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
   flex: 1;
-  background-color: green;
 }
 
-footer {
-  background-color: ;
-  height: 50px;
-  background-color: yellow;
+.main__top,
+.main__mid,
+.main__bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.main__top {
+  background-color: red;
+}
+.main__mid {
+  background-color: green;
+}
+.main__bottom {
+  background-color: blue;
 }
 
 .background {
