@@ -12,7 +12,7 @@
   </head>
   <body>
     <header>
-      <div id="weather">
+      <div class="weather">
         <span class="weather__temp"></span>
         <span class="weather__wether"></span>
         <span class="weather__city"></span>
@@ -20,26 +20,35 @@
     </header>
     <main>
       <div class="main__top">
-        <span>asdf</span>
+        <span class="main__top__current">디자인 시안 만들기</span>
+        <br />
+        <span class="main__top__progress">
+          <span class="main__top__progress-gauge"> </span>
+        </span>
       </div>
       <div class="main__mid">
         <h1 class="clock">7:56</h1>
+        <!--
         <form class="login-form">
           <input placeholder="Type your name" type="text" class="input" />
         </form>
-        <h1 class="greeting hidden"></h1>
         <form class="todo-form">
           <input type="text" class="todo-form__input" />
         </form>
         <ul class="todo-list"></ul>
         <button class="pomodoro__start-btn">Start</button>
+        -->
       </div>
       <div class="main__bottom">
-        <span>asdf</span>
+        <span>다음 목표</span>
+        <span>CSS 설계하기</span>
+        <button>RESET</button>
+        <button>PAUSE</button>
+        <button>SKIP</button>
       </div>
     </main>
     <footer>
-      <span id="footer__todo">Todo</span>
+      <span class="footer__todo">Todo</span>
     </footer>
     <img class="background" />
     <script src="js/clock.js"></script>

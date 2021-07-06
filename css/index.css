@@ -13,7 +13,15 @@ body {
 
 header,
 footer {
+  display: flex;
+  justify-content: flex-end;
   height: 50px;
+}
+
+.weather,
+.footer__todo {
+  height: 50px;
+  width: 100px;
 }
 
 main {
@@ -34,16 +42,6 @@ main {
   flex: 1;
 }
 
-.main__top {
-  background-color: red;
-}
-.main__mid {
-  background-color: green;
-}
-.main__bottom {
-  background-color: blue;
-}
-
 .background {
   position: absolute;
   top: 0;
@@ -52,4 +50,28 @@ main {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+}
+
+.clock {
+  font-size: 150px;
+}
+
+.main__top__current {
+  font-size: 40px;
+}
+
+.main__top__progress {
+  display: inline-block;
+  width: 520px;
+  height: 21px;
+  border-radius: 10px;
+  background-color: #d6d3d3;
+}
+
+.main__top__progress-gauge {
+  display: inline-block;
+  width: 95%;
+  height: 21px;
+  background-color: #3abff7;
+  border-radius: 10px;
 }
