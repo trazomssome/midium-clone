@@ -1,7 +1,6 @@
 const todoForm = document.querySelector(".todo-form");
 const todoInput = document.querySelector(".todo-form__input");
 const todoList = document.querySelector(".todo-list");
-const startBtn = document.querySelector(".pomodoro__start-btn");
 
 const deleteTodo = (event) => {
   const li = event.target.parentNode;
@@ -71,4 +70,3 @@ const handleStart = () => {
 init();
 
 todoForm.addEventListener("submit", submitTodo);
-startBtn.addEventListener("click", handleStart);

@@ -7,7 +7,7 @@ const checkTime = () => {
   const seconds = current.getSeconds();
   clock.innerText = `${String(hours).padStart(2, "0")}:${String(
     minutes
-  ).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+  ).padStart(2, "0")}`;
 };
 
 checkTime();

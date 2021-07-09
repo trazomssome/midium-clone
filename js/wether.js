@@ -9,8 +9,9 @@ const checkWeather = (url) => {
     .then((response) => response.json())
     .then((data) => {
       city.innerText = data.name;
-      wether.innerText = data.weather[0].main;
-      temp.innerText = data.main.temp;
+      //wether.src = data.weather[0].main;
+      wether.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+      temp.innerText = data.main.temp.toFixed(1) + "℃";
     });
 };
 

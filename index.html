@@ -4,51 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pomodoro</title>
+    <title>New Tab</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/clock.css" />
-    <link rel="stylesheet" href="css/background.css" />
   </head>
   <body>
     <header>
+      <div>
+        <img class="weather__wether" />
+      </div>
       <div class="weather">
-        <span class="weather__temp"></span>
-        <span class="weather__wether"></span>
-        <span class="weather__city"></span>
+        <p><span class="weather__temp"></span></p>
+        <p></p><span class="weather__city"></span></p>
       </div>
     </header>
     <main>
-      <div class="main__top">
-        <span class="main__top__current">디자인 시안 만들기</span>
-        <br />
-        <span class="main__top__progress">
-          <span class="main__top__progress-gauge"> </span>
-        </span>
-      </div>
+      <div class="main__top"></div>
       <div class="main__mid">
         <h1 class="clock">7:56</h1>
-        <!--
         <form class="login-form">
           <input placeholder="Type your name" type="text" class="input" />
         </form>
+        <span class="greeting hidden">Hello</span>
+      </div>
+      <div class="main__bottom">
+        <span class="todo__request">What is your focus for today?</span>
         <form class="todo-form">
           <input type="text" class="todo-form__input" />
         </form>
         <ul class="todo-list"></ul>
-        <button class="pomodoro__start-btn">Start</button>
-        -->
-      </div>
-      <div class="main__bottom">
-        <span>다음 목표</span>
-        <span>CSS 설계하기</span>
-        <button>RESET</button>
-        <button>PAUSE</button>
-        <button>SKIP</button>
       </div>
     </main>
     <footer>
-      <span class="footer__todo">Todo</span>
+      <span>Some Quote</span>
+      <span>author</span>
     </footer>
     <img class="background" />
     <script src="js/clock.js"></script>
@@ -56,5 +45,6 @@
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/wether.js"></script>
+    <script src="js/quotes.js"></script>
   </body>
 </html>
