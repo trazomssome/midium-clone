@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
+    <div class="main__wrapper__no-login">
+      <div class="login">
+        <span class="login__request">Hello, what's your name?</span>
+        <form class="login-form">
+          <input placeholder="Type your name" type="text" class="input" />
+        </form>
+      </div>
+    </div>
     <header>
       <div>
         <img class="weather__wether" />
@@ -19,21 +27,18 @@
       </div>
     </header>
     <main>
-      <div class="main__top"></div>
-      <div class="main__mid">
-        <h1 class="clock">7:56</h1>
-        <form class="login-form">
-          <input placeholder="Type your name" type="text" class="input" />
-        </form>
-        <span class="greeting hidden">Hello</span>
-      </div>
-      <div class="main__bottom">
-        <span class="todo__request">What is your focus for today?</span>
-        <form class="todo-form">
-          <input type="text" class="todo-form__input" />
-        </form>
-        <ul class="todo-list"></ul>
-      </div>
+        <div class="main__top"></div>
+        <div class="main__mid">
+          <h1 class="clock">7:56</h1>
+          <span class="greeting hidden">Hello</span>
+        </div>
+        <div class="main__bottom">
+          <span class="todo__request">What is your focus for today?</span>
+          <form class="todo-form">
+            <input type="text" class="todo-form__input" />
+          </form>
+          <ul class="todo-list"></ul>
+        </div>
     </main>
     <footer>
       <span>Some Quote</span>

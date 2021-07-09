@@ -34,7 +34,7 @@ header {
   margin: 10px;
   text-align: right;
   height: 50px;
-  font-size:20px;
+  font-size: 20px;
 }
 
 .weather__wether {
@@ -103,6 +103,19 @@ li {
   font-size: 25px;
 }
 
+.login__request {
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 /*
 header,
 footer {
@@ -117,3 +130,4 @@ footer {
 .main__bottom {
   background: rgba(0, 0, 255, 0.2);
 }
+*/
